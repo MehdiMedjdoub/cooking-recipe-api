@@ -11,14 +11,14 @@
 $ git clone git@github.com:MehdiMedjdoub/cooking-recipe-api.git
 ```
 
-définir les variables d'environnement a partir du fichier .env.dist
+Définir les variables d'environnement a partir du fichier .env.dist
 
 ### 2. Installer les dépendances
 ```bash
 $ composer install
 ```
 
-### 3. création de la base de donnée et migration
+### 3. Création de la base de données et migration
 
 ```bash
 $ php bin/console doctrine:database:create
@@ -26,7 +26,7 @@ $ php bin/console doctrine:migrations:diff
 $ php bin/console doctrine:migrations:migrate
 ```
 
-### 4. configuration de LexikJWTAuthenticationBundle
+### 4. Configuration de LexikJWTAuthenticationBundle
 
 ```bash
 $ mkdir -p config/jwt
@@ -45,15 +45,15 @@ JWT_PASSPHRASE=YourPassPhrase
 
 ## Usage
 
-### exemple d'utilisation
+### Exemple d'utilisation
 
-#### 1. pour enregistrer un utilisateur ou se connecter: 
+#### 1. Pour enregistrer un utilisateur ou se connecter: 
 
 ```
 [POST] /register 
 [POST] /api/login_check
 ```
-exemple de données à envoyer:
+Exemple de données à envoyer:
 ```
 {
 	"email":"votre email",
@@ -74,13 +74,13 @@ Passez ensuite le token dans l'en-tête de chaque requête:
 Authorization: Bearer {token}
 ```
 
-#### 2. pour ajouter une nouvelle recette:
+#### 2. Pour ajouter une nouvelle recette:
 
 ```
 [POST] /api/recipe
 ```
 
-exemple de données à envoyer:
+Exemple de données à envoyer:
 ```
 {
     "title": "titre de la recette",
@@ -99,13 +99,13 @@ exemple de données à envoyer:
 }
 ```
 
-#### 3. pour récuperer une recette:
+#### 3. Pour récuperer une recette:
 
 ```
 [GET] /api/recipe/:id
 ```
 
-exemple de réponse:
+Exemple de réponse:
 ```
 {
     "id": 1,
@@ -134,7 +134,7 @@ exemple de réponse:
 [GET] /api/recipes
 ```
 
-exemple de réponse:
+Exemple de réponse:
 ```
 [
     {
@@ -180,7 +180,7 @@ exemple de réponse:
 [PUT] /api/recipe/:id
 ```
 
-exemple de données à envoyer:
+Exemple de données à envoyer:
 ```
 {
     "title": "update de la recette",

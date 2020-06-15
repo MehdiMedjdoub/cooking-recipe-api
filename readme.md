@@ -11,14 +11,14 @@
 $ git clone git@github.com:MehdiMedjdoub/cooking-recipe-api.git
 ```
 
-definir les variables d'environnement a partir du fichier .env.dist
+définir les variables d'environnement a partir du fichier .env.dist
 
 ### 2. Installer les dépendances
 ```bash
 $ composer install
 ```
 
-### 3. creation de la base de donnée et migration
+### 3. création de la base de donnée et migration
 
 ```bash
 $ php bin/console doctrine:database:create
@@ -53,7 +53,7 @@ JWT_PASSPHRASE=YourPassPhrase
 [POST] /register 
 [POST] /api/login_check
 ```
-exemple de donnée à envoyer:
+exemple de données à envoyer:
 ```
 {
 	"email":"votre email",
@@ -61,7 +61,7 @@ exemple de donnée à envoyer:
 }
 ```
 
-Pour la connexion, si tout est ok vous recevez un token en reponse: 
+Pour la connexion, si tout est ok vous recevez un token en réponse: 
 ```
 {
    "token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9.eyJleHAiOjE0MzQ3Mjc1MzYsInVzZXJuYW1lIjoia29ybGVvbiIsImlhdCI6IjE0MzQ2NDExMzYifQ.nh0L_wuJy6ZKIQWh6OrW5hdLkviTs1_bau2GqYdDCB0Yqy_RplkFghsuqMpsFls8zKEErdX5TYCOR7muX0aQvQxGQ4mpBkvMDhJ4-pE4ct2obeMTr_s4X8nC00rBYPofrOONUOR4utbzvbd4d2xT_tj4TdR_0tsr91Y7VskCRFnoXAnNT-qQb7ci7HIBTbutb9zVStOFejrb4aLbr7Fl4byeIEYgp2Gd7gY"
@@ -105,7 +105,7 @@ exemple de données à envoyer:
 [GET] /api/recipe/:id
 ```
 
-exemple de reponse:
+exemple de réponse:
 ```
 {
     "id": 1,
@@ -134,7 +134,7 @@ exemple de reponse:
 [GET] /api/recipes
 ```
 
-exemple de reponse:
+exemple de réponse:
 ```
 [
     {
@@ -174,7 +174,7 @@ exemple de reponse:
 ]
 ```
 
-#### 5. Pour mettre à jours une recette
+#### 5. Pour mettre à jour une recette
 
 ```
 [PUT] /api/recipe/:id
